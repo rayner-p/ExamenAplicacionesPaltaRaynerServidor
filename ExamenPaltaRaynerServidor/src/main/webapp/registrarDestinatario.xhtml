@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+
+<h:head></h:head> 
+<body> 
+<h1>Registrar Destinatario</h1>
+	<h:form>
+	<h:panelGrid columns="2">
+		<h:outputLabel value="CEDULA" />
+		<h:inputText value="#{destinatarioBean.newDestinatario.cedula}"/>
+		<h:outputLabel value="NOMBRES" />
+		<h:inputText value="#{destinatarioBean.newDestinatario.nombre}" />
+		<h:outputLabel value="APELLIDOS" />
+		<h:inputText value="#{destinatarioBean.newDestinatario.apellido}" />
+		<h:outputLabel value="DIRECCION" />
+		<h:inputText value="#{destinatarioBean.newDestinatario.direccion}" />
+		<h:outputLabel value="CELULAR" />
+		<h:inputText value="#{destinatarioBean.newDestinatario.celular}" />
+		<h:outputLabel value="CORREO" />
+		<h:inputText value="#{remitenteBean.newRemitente.correo}" />
+		
+		<h:commandButton action="#{destinatarioBean.doRegistro()}" value="REGISTRAR" />
+	
+	</h:panelGrid>
+		
+	</h:form>
+</body> 
+</html>
